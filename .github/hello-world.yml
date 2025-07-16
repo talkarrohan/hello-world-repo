@@ -1,0 +1,16 @@
+name: kodecloud-workflow-1
+
+on: push
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Hello World.
+        run: echo "Hello, World!"
+
+      - name: Run listing if files.
+        run: ls -la
+
+      - name: Read the file.
+        run: cat README.md
