@@ -12,5 +12,8 @@ jobs:
       - name: Run listing if files.
         run: ls -la
 
+      - name: Check free memory.
+        run: free -h
+
       - name: Read the file.
         run: cat README.md
